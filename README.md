@@ -150,6 +150,19 @@ result := prices.vkplay(client) or {
 }
 ```
 
+##### Price Categories
+
+```v
+import pixel365.reydenxv.client as c
+import pixel365.reydenxv.prices
+
+mut client := c.Client{username: 'USERNAME', password: 'PASSWORD'}
+
+result := prices.categories(client) or {
+    panic(err)
+}
+```
+
 ### Orders
 
 ##### All Orders

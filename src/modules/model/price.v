@@ -8,4 +8,5 @@ pub struct Price {
 	description string
 	views MinMaxStep
 	online_viewers MinMaxStep
+	category_id int
 }

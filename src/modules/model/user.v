@@ -5,7 +5,7 @@ pub struct Balance {
 	amount f64
 	currency_id int
 	user_id int
-	formatted_amount string
+	formatted_amount f64
 	curency string
 }
 

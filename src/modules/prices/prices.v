@@ -36,3 +36,9 @@ pub fn trovo(mut c Client) !Response[[]Price] {
 pub fn vkplay(mut c Client) !Response[[]Price] {
 	return request(c, Platform.vkplay)
 }
+
+// categories All price categories
+// See https://api.reyden-x.com/docs#/Price%20Categories/categories_v1_price_categories__get
+pub fn categories(mut c Client) !Response[[]PriceCategory] {
+	return c.get[Result[[]PriceCategory]]('/price-categories/')
+}
